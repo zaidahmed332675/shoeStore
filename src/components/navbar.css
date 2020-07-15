@@ -1,0 +1,27 @@
+body{
+    background-color: #ececec;
+}
+.navParent{
+    position: fixed;
+    width: 100%;
+    background-color: #2B435D;
+}
+.navParent ul{
+    margin: 2px 0 2px 0;
+    padding: 2px;
+}
+.navParent li{
+    display: inline-block;
+    padding: 20px;
+    margin: 5px 0px 5px 0px;
+    list-style-type: none;
+}
+.navParent li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-kerning: normal;
+    font-family: unset;
+    color:#ECECEC;
+    list-style-type: none;
+}
