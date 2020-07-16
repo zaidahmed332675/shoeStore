@@ -9,6 +9,11 @@ import Shoe6 from "../images/shoeImages/shoe007.png";
 import Shoe7 from "../images/shoeImages/shoe008.png";
 import Shoe8 from "../images/shoeImages/shoe009.png";
 
+import blackshoe from "../images/shoeImages/blackshoe1.png";
+import redshoe from "../images/shoeImages/redshoe1.png";
+import greenshoe from "../images/shoeImages/greenshoe1.png";
+import orangeshoe from "../images/shoeImages/orangeshoe1.png";
+
 const productList = {
   shoes: [
     {
@@ -92,6 +97,49 @@ const productList = {
       count: 1,
     },
   ],
+  featuredShoes:[
+    {
+      id: 9,
+      shoeName: "Nike Original 9",
+      slug: "Nike-Original-1",
+      price: 100,
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      image: blackshoe,
+      count: 1,
+    },
+    {
+      id: 10,
+      shoeName: "Nike Original 10",
+      slug: "Nike-Original-1",
+      price: 100,
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      image: redshoe,
+      count: 1,
+    },
+    {
+      id: 11,
+      shoeName: "Nike Original 11",
+      slug: "Nike-Original-1",
+      price: 100,
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      image: greenshoe,
+      count: 1,
+    },
+    {
+      id: 12,
+      shoeName: "Nike Original 12",
+      slug: "Nike-Original-1",
+      price: 100,
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      image: orangeshoe,
+      count: 1,
+    },
+
+  ]
 };
 
 export const GlobalData = createContext(productList);
@@ -100,7 +148,8 @@ export const GlobalContextProvider = ({children}) => {
   return (
     <GlobalData.Provider
       value={{
-        data: productList.shoes,
+        shoes: productList.shoes,
+        featuredShoes: productList.featuredShoes,
       }}
     >
       {children}

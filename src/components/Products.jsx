@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 
 let Products = () => { 
 
-    let {data} = useContext(GlobalData);
+    let {shoes} = useContext(GlobalData);
 
     const classes = useStyles();
 
@@ -34,7 +34,7 @@ let Products = () => {
             </Box>
             <Box mt={5}>
                 <Grid container spacing={4}>
-                        {data.map((value,index) => (
+                        {shoes.map((value,index) => (
                             <ProductCard key={index} id={value.id} name={value.shoeName} image={value.image} price={value.price} description={value.description} slug={value.slug} />
                         ))}
                 </Grid>

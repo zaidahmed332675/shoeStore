@@ -13,8 +13,9 @@ const useStyles = makeStyles((theme) => ({
 
 let FeaturedProducts = () => {
 
-    let {data} = useContext(GlobalData);
+    let {featuredShoes} = useContext(GlobalData);
 
+    console.log(featuredShoes)
     const classes = useStyles();
 
     return (
@@ -22,7 +23,7 @@ let FeaturedProducts = () => {
                 <Box mt={5}>
                     <Grid container spacing={4}>
                         <Grid item xs={12}>
-                            <h1 align="center">Featured Products</h1>
+                            <h1 align="center">Latest and Greatest</h1>
                         </Grid>
                         <Grid item xs={12}>
                             <Typography variant="subtitle1" align="center">Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</Typography>        
@@ -35,7 +36,7 @@ let FeaturedProducts = () => {
                 
                 <Box mt={5}>
                     <Grid container spacing={4}>
-                        {data.map((value,index) => (
+                        {featuredShoes.map((value,index) => (
                             <ProductCard key={index} id={value.id} name={value.shoeName} image={value.image} price={value.price} description={value.description} slug={value.slug} />    
                         ))}
                     </Grid>
