@@ -101,7 +101,7 @@ const productList = {
     {
       id: 9,
       shoeName: "Nike Original 9",
-      slug: "Nike-Original-1",
+      slug: "Nike-Original-9",
       price: 100,
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
@@ -111,7 +111,7 @@ const productList = {
     {
       id: 10,
       shoeName: "Nike Original 10",
-      slug: "Nike-Original-1",
+      slug: "Nike-Original-10",
       price: 100,
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
@@ -120,8 +120,8 @@ const productList = {
     },
     {
       id: 11,
-      shoeName: "Nike Original 11",
-      slug: "Nike-Original-1",
+      shoeName: "Nike Original 12",
+      slug: "Nike-Original-12",
       price: 100,
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
@@ -130,8 +130,8 @@ const productList = {
     },
     {
       id: 12,
-      shoeName: "Nike Original 12",
-      slug: "Nike-Original-1",
+      shoeName: "Nike Original 13",
+      slug: "Nike-Original-13",
       price: 100,
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",

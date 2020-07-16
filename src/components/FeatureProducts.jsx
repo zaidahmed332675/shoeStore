@@ -37,7 +37,7 @@ let FeaturedProducts = () => {
                 <Box mt={5}>
                     <Grid container spacing={4}>
                         {featuredShoes.map((value,index) => (
-                            <ProductCard key={index} id={value.id} name={value.shoeName} image={value.image} price={value.price} description={value.description} slug={value.slug} />    
+                            <ProductCard key={index} id={value.id} name={value.shoeName} image={value.image} price={value.price} description={value.description} slug={`products/${value.slug}`} />    
                         ))}
                     </Grid>
                 </Box>
