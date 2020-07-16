@@ -2,10 +2,10 @@ import React from 'react';
 import {Routes,Route} from 'react-router-dom';
 
 // Import All Comps
-import Home from './Home'
-import Products from './Products'
-import ProductDetail from './ProductDetail';
-import Page404 from './Page404';
+import Home from '../components/Home'
+import Products from '../components/Products'
+import ProductDetail from '../components/ProductDetail';
+import Page404 from '../components/Page404';
 
 function AppRoutes(){
     return (

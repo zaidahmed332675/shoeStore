@@ -1,12 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {Box, Grid, makeStyles, Typography} from '@material-ui/core'
 
-import service1 from '../images/featuredProducts/service1.png'
-import service2 from '../images/featuredProducts/service2.png'
-import service3 from '../images/featuredProducts/service3.png'
-import service4 from '../images/featuredProducts/service4.png'
-
 import ProductCard from './ProductCard'
+
+import {GlobalData} from '../context/ContextApi'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -15,6 +12,8 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 let FeaturedProducts = () => {
+
+    let {data} = useContext(GlobalData);
 
     const classes = useStyles();
 
@@ -36,10 +35,9 @@ let FeaturedProducts = () => {
                 
                 <Box mt={5}>
                     <Grid container spacing={4}>
-                        <ProductCard name="Nike SB Zoom Blazer Mid" img={service1}/>
-                        <ProductCard name="Nike Air Max 2090" img={service2}/>
-                        <ProductCard name="Nike Air Force 1 '07 LV8" img={service3}/>
-                        <ProductCard name="Nike Stride Wild Run" img={service4}/>
+                        {data.map((value,index) => (
+                            <ProductCard key={index} id={value.id} name={value.shoeName} image={value.image} price={value.price} description={value.description} slug={value.slug} />    
+                        ))}
                     </Grid>
                 </Box>
             </Box>

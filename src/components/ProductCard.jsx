@@ -32,11 +32,16 @@ const useStyles = makeStyles((theme) => ({
     link:{
         textDecoration:"none",
         color:"#333333"
+    },
+    imageStyle:{
+        width:"100%",
+        transform:"translate(-10%,0%) rotate(-40deg)",
+        zIndex:"-1000",
     }
 
   }));
 
-export default function ProductCard({name,img,price}){
+export default function ProductCard({id,name,image,price,description,slug}){
 
     const classes = useStyles();
 
@@ -44,8 +49,8 @@ export default function ProductCard({name,img,price}){
             <Grid item xs={12} sm={6} md={3}>
                 <Paper elevation={5} className={classes.paper}>
                     <Box className={classes.innerPaper}>
-                        <h3>Nike SB Zoom Blazer Mid</h3>
-                        <img src={img} alt={img}/>
+                        <h3>{name}</h3>
+                        <img src={image} alt={image}  className={classes.imageStyle}/>
                         <Box className={classes.sizeColor} style={{display:"flex"}}>
                             <Box>
                                 <span>Sizes</span>
@@ -65,7 +70,7 @@ export default function ProductCard({name,img,price}){
                             </Box>
                         </Box>
                     </Box>
-                    <button className={classes.buttonStyle}><Link className={classes.link} to={name}>ADD TO CART</Link></button>
+                    <button className={classes.buttonStyle}><Link className={classes.link} to={slug}>ADD TO CART</Link></button>
                 </Paper>
             </Grid>
         )}

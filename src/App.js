@@ -4,16 +4,16 @@ import {BrowserRouter as Router} from 'react-router-dom';
 // Importing all components
 import NavBar from './components/NavBar'
 import Banner from './components/Banner'
-import AppRoutes from './components/AppRoutes'
-
+import AppRoutes from './appRoutes/AppRoutes'
+import {GlobalContextProvider} from './context/ContextApi'
 
 let App = () => (
     <Router>
-        <div>
-          <NavBar />
-          <Banner />
-          <AppRoutes />
-        </div>
+      <NavBar />
+      <Banner />
+      <GlobalContextProvider >
+        <AppRoutes />
+      </GlobalContextProvider>
     </Router>
 )
 
