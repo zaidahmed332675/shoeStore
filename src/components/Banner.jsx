@@ -1,7 +1,7 @@
 import React from 'react';
 import {Box} from '@material-ui/core';
 
-import banner from '../images/banner3.png'
+import banner from '../images/banner.png'
 
 let Banner = () => {
     return (
