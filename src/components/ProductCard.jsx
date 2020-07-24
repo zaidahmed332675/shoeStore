@@ -95,7 +95,7 @@ export default function ProductCard({id,name,image,price,description,slug}){
                             <span style={{display:"block",fontSize:"1.4rem",fontWeight:"600",paddingBottom:"10px"}}>$7,999</span> 
                         </Box>
                     </Box>
-                    <button className={classes.buttonStyle}><Link className={classes.link} to={slug}>ADD TO CART</Link></button>
+                    <button className={classes.buttonStyle}><Link className={classes.link} to={slug}>ORDER NOW</Link></button>
                 </Paper>
             </Grid>
         )}
