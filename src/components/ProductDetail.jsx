@@ -32,7 +32,7 @@ let ProductDetail = () => {
     let {shoe:shoeSlug} = useParams();
 
     let finalData = shoes.filter(val => val.slug === shoeSlug);
-    if(finalData.length == 0)
+    if(finalData.length === 0)
       finalData = featuredShoes.filter(val => val.slug === shoeSlug);
 
     return ( 
